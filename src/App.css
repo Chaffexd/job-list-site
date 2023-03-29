@@ -1,0 +1,17 @@
+.App {
+  background-color: hsl(180, 52%, 96%);
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url(../images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(180, 29%, 50%);
+  min-width: 100vw;
+  height: 10em;
+}
