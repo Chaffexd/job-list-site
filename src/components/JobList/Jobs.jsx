@@ -13,14 +13,18 @@ const Jobs = () => {
                         <div className={classes.companyLogoContainer}>
                             <img src={jobItem.logo} alt="Company logo" />
                         </div>
-                        <div>
-                            <span>{jobItem.company}</span>
-                            <span>{jobItem.new}</span>
-                            <span>{jobItem.new}</span>
+                        <div className={classes.companyInfo}>
+                            <div className={classes.newFeatured}>
+                                <h3>{jobItem.company}</h3>
+                                {jobItem.new ?<span>NEW!</span> : null}
+                                {jobItem.featured ?<span>FEATURED!</span> : null}
+                            </div>
                             <h3>{jobItem.position}</h3>
-                            <span>{jobItem.postedAt}</span>
-                            <span>{jobItem.contract}</span>
-                            <span>{jobItem.location}</span>
+                            <div className={classes.metaData}>
+                                <span>{jobItem.postedAt}</span>
+                                <span>{jobItem.contract}</span>
+                                <span>{jobItem.location}</span>
+                            </div>
                         </div>
                     </div>
                     <div className={classes.jobInfoContainer}>

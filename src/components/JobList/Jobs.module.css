@@ -25,3 +25,23 @@
 .jobInfo {
     margin: 0 1em 0 1em;
 }
+
+.metaData span:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.5rem;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+
+.newFeatured {
+    display: inline;
+}
+
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
