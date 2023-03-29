@@ -1,0 +1,27 @@
+.jobs {
+    display: flex;
+    min-width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    margin: 1.5em 0 1.5em 0;
+}
+
+.jobContainer {
+    display: flex;
+    padding: 1em;
+}
+
+.companyLogoContainer {
+    margin-right: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.jobInfoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.jobInfo {
+    margin: 0 1em 0 1em;
+}

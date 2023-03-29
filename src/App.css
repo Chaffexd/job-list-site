@@ -1,7 +1,8 @@
-.App {
+html {
   background-color: hsl(180, 52%, 96%);
-  height: 100vh;
+  height: auto;
 }
+
 
 body {
   margin: 0;
@@ -14,4 +15,5 @@ body {
   background-color: hsl(180, 29%, 50%);
   min-width: 100vw;
   height: 10em;
+  display: block;
 }
