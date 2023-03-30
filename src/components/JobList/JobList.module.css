@@ -3,3 +3,53 @@
     height: auto;
     margin: 0 auto;
 }
+
+.filterBar {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -27px;
+}
+
+.selectedFilters {
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    max-width: 100%;
+    padding: 1em .5em 1em .5em;
+    margin: 0 auto;
+    display: flex;
+}
+
+.selectedFilter {
+    margin-right: 1em;
+    background-color: rgb(238,246,246);
+    color: hsl(180, 29%, 50%);
+    height: 35px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filteredButton {
+    border: none;
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+    float: right;
+    margin-left: auto;
+    height: 100%;
+    width: 30px;
+    border-radius: 0 5px 5px 0;
+}
+
+.filterText {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.filterCloseIcon {
+    color: white;
+    font-weight: 700;
+}
