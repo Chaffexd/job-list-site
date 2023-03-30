@@ -53,3 +53,16 @@
     color: white;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 1040px) {
+    .selectedFilters {
+        max-width: 375px;
+        box-sizing: content-box;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .selectedFilter {
+        margin-bottom: 10px;
+    }
+}
