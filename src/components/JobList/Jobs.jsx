@@ -15,23 +15,23 @@ const Jobs = () => {
                         </div>
                         <div className={classes.companyInfo}>
                             <div className={classes.newFeatured}>
-                                <h3>{jobItem.company}</h3>
-                                {jobItem.new ?<span>NEW!</span> : null}
-                                {jobItem.featured ?<span>FEATURED!</span> : null}
+                                <h3 className={classes.company}>{jobItem.company}</h3>
+                                {jobItem.new ?<span className={classes.new}>NEW!</span> : null}
+                                {jobItem.featured ?<span className={classes.featured}>FEATURED</span> : null}
                             </div>
-                            <h3>{jobItem.position}</h3>
+                            <a href='/' className={classes.position}>{jobItem.position}</a>
                             <div className={classes.metaData}>
-                                <span>{jobItem.postedAt}</span>
-                                <span>{jobItem.contract}</span>
-                                <span>{jobItem.location}</span>
+                                <span className={classes.metaInfo}>{jobItem.postedAt}</span>
+                                <span className={classes.metaInfo}>{jobItem.contract}</span>
+                                <span className={classes.metaInfo}>{jobItem.location}</span>
                             </div>
                         </div>
                     </div>
                     <div className={classes.jobInfoContainer}>
-                        <span className={classes.jobInfo}>{jobItem.role}</span>
-                        <span className={classes.jobInfo}>{jobItem.level}</span>
+                        <button className={classes.jobInfo}>{jobItem.role}</button>
+                        <button className={classes.jobInfo}>{jobItem.level}</button>
                         {jobItem.languages.map((language, index) => (
-                            <span key={index} className={classes.jobInfo}>{language}</span>
+                            <button key={index} className={classes.jobInfo}>{language}</button>
                         ))}
                     </div>
                 </div>

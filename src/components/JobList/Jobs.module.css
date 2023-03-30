@@ -24,6 +24,19 @@
 
 .jobInfo {
     margin: 0 1em 0 1em;
+    background-color: rgb(238,246,246);
+    border: none;
+    cursor: pointer;
+    padding: .7em;
+    border-radius: 5px;
+    color: hsl(180, 29%, 50%);
+    font-weight: 700;
+}
+
+.jobInfo:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: rgb(238,246,246);
+    transition: ease-in .2s;
 }
 
 .metaData span:not(:last-child)::after {
@@ -37,11 +50,52 @@ h3 {
 }
 
 .newFeatured {
-    display: inline;
+    display: inline-flex;
+    align-items: center;
+    height: auto;
 }
 
 .companyInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.position {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+}
+
+.position:hover {
+    color: rgb(91,164,164);
+    transition: ease-in .1s;
+}
+
+.company {
+    color: rgb(91,164,164);
+}
+
+.new, .featured {
+    font-size: 12px;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 15px;
+    padding: 5px 6px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    height: 10px;
+    line-height: 10px;
+    margin-right: 1em;
+}  
+
+.featured {
+    background-color: hsl(180, 14%, 20%);
+}
+
+.metaInfo {
+    color: hsl(180, 8%, 52%);
+    font-weight: 500;
 }
