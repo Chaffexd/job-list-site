@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // forward `/uploads/` endpoint to -> `http://localhost:5000/uploads/`
       '^/uploads': {
-        target: 'http://127.0.0.1:5176/'
+        target: 'http://localhost:5000/uploads/'
       }
     }
   }
