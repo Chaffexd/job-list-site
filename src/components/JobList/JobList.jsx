@@ -20,6 +20,7 @@ const JobList = () => {
   // items that include the filter selected
   if (selectedFilters.length > 0) {
     filteredData = data.filter((jobItem) => {
+      // the tags are the options you can select from the json file
       const tags = [jobItem.role, jobItem.level, ...jobItem.languages];
       return selectedFilters.every((filter) => tags.includes(filter));
     });
